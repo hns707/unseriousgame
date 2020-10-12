@@ -1,2 +1,2 @@
 # unseriousgame
-test
+https://hns707.github.io/unseriousgame/
