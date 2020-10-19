@@ -35,4 +35,7 @@ body {
     height: 40vh;
     width: auto;
   }  
-  
+  h1 {
+    animation-name: fade-in;
+    animation-duration: 1s;
+  }
