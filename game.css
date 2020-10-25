@@ -1,7 +1,12 @@
 @import url(https://fonts.googleapis.com/css2?family=Crimson+Pro);
 
 body {
-    text-align: center;
+    display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
     font-family: 'Crimson Pro', cursive;
 	font-size: 22px;
 	color: #00b3ff;
@@ -21,6 +26,8 @@ body {
     font-weight:bold;
     padding:8px 21px;
     text-decoration:none;
+	animation-name: fade-in;
+	animation-duration: 2s;
   }
   .btn:hover {
     background:linear-gradient(to bottom, #969696 5%, #ffffff 100%);
@@ -30,14 +37,29 @@ body {
     position:relative;
     top:1px;
   }
+  
+  h1,h2{
+  max-width: 800px;
+  line-height: 1.5;
+  animation-name: fade-in;
+  animation-duration: 2s;
+}
+  
   img{
     margin: 40px;
     border: 1px solid #00b3ff;
     padding: 10px;
     height: 40vh;
     width: auto;
-  }  
-  h1 {
-    animation-name: fade-in;
-    animation-duration: 1s;
+	animation-name: fade-in;
+	animation-duration: 2s;
+  } 
+  
+  @keyframes fade-in {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
