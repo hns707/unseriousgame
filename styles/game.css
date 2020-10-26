@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Crimson+Pro);
+@import url(https://fonts.googleapis.com/css2?family=Eurostile);
 
 body {
     display: flex;
@@ -7,7 +7,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-    font-family: 'Crimson Pro', cursive;
+  font-family: eurostile,sans-serif;
 	font-size: 22px;
 	color: #00b3ff;
     
@@ -15,23 +15,21 @@ body {
   }
   .btn {
     box-shadow:inset 0px 1px 0px 0px #dedede;
-    background:linear-gradient(to bottom, #ffffff 5%, #969696 100%);
-    background-color:#ffffff;
+    background-color:transparent;
     border:1px solid #00b3ff;
     display:inline-block;
     cursor:pointer;
-    color:hsl(0, 90%, 43%);
+    color: #00b3ff;
     font-family:Arial;
     font-size:16px;
     font-weight:bold;
     padding:8px 21px;
     text-decoration:none;
-	animation-name: fade-in;
-	animation-duration: 2s;
+	  animation-name: fade-in;
+	  animation-duration: 2s;
   }
   .btn:hover {
-    background:linear-gradient(to bottom, #969696 5%, #ffffff 100%);
-    background-color:#969696;
+    background-color:hsla(17, 100%, 51%, 0.384);
   }
   .btn:active {
     position:relative;
@@ -43,7 +41,7 @@ body {
   line-height: 1.5;
   animation-name: fade-in;
   animation-duration: 2s;
-}
+  }
   
   img{
     margin: 40px;
@@ -51,8 +49,8 @@ body {
     padding: 10px;
     height: 40vh;
     width: auto;
-	animation-name: fade-in;
-	animation-duration: 2s;
+	  animation-name: fade-in;
+	  animation-duration: 2s;
   } 
   
   @keyframes fade-in {
@@ -62,32 +60,39 @@ body {
   100% {
     opacity: 1;
   }
-}
+  
+  }
 
-.sign {
-	box-shadow: 0px 1px 0px 0px #fff6af;
-	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
-	background-color:#ffec64;
-	border-radius:6px;
-	position: fixed;
-	bottom: 5px;
-	right: 5px;
-	border:1px solid #ffaa22;
-	display:inline-block;
-	cursor:pointer;
-	color:#333333;
-	font-family:Arial;
-	font-size:12px;
-	font-weight:bold;
-	padding:5px 25px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffee66;
-	justify-content: none;
-}
-.sign:hover {
-	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
-	background-color:#ffab23;
-}
-.sign:active {
-	position:fixed;
-}
+  .signature{
+    background-color: #222;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    top: 0px;
+    right: 20px;
+    width: 150px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: 5px 5px 5px 0px #000000;
+  }
+
+  .signature a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 10px;
+  }
+
+  .signature:hover{
+    background-color: #006b99;
+  }
+
+  .blinktitle{
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    font-family: eurostile,sans-serif;
+    font-size: 50px;
+  }
